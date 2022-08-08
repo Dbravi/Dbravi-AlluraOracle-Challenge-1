@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+</head>
+<main>
+    <div class="Input contact-form">
+        <textarea name="texto" cols="50" rows="5" placeholder="Ingrese el texto aquí"
+            title="Debes usar letras minúsculas, sin acentos ni caracteres" data-pattern="^[a-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
+            required></textarea>
+        <div class="buttons">
+            <button id="Encriptar">Encriptar </button>
+            <button id="Desencriptar">Desencriptar </button>
+        </div>
+    </div>
+    <div class="Output">
+        <div class="Output-nofound">
+            <img src="./munieco.svg">
+            <h2>Ningún mensaje fue encontrado</h2>
+            <p>Ingrese el texto que desee encriptar o desencriptar</p>
+        </div>
+        <div id="Output">
+        </div>
+        <button onclick="copyToClipboard()" id="copy-button" class="none">Copiar</button>
+    </div>
+
+</main>
+
+<body>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
